@@ -54,19 +54,3 @@ cacheSolve <- function(x, ...) {
                 return(solved_matrix)
         }
 }
-
-A <- matrix( c(5, 1, 0,
-               3,-1, 2,
-               4, 0,-1), nrow=3, byrow=TRUE)
-z <- makeCacheMatrix(A)
-cacheSolve(z)
-
-
-D <- matrix( c(8, 6, 8, 4, 3,
-               4, 5, 3, 2, 1,
-               4, 3, 2, 1, 4,
-               4, 6, 4, 3, 2,
-               4, 11, 22, 434, 32), nrow = 5, byrow = TRUE)
-
-final <- makeCacheMatrix(D)
-cacheSolve(final)
